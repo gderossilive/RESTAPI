@@ -4,6 +4,8 @@
 @ClientSecret=3Wi-.y2lEWH-KcHHZ9V7~Wx7-CVc-.67x~
 @Resource=https://management.azure.com
 
+#
+
 # @name login
 POST https://login.microsoftonline.com/{{TenantID}}/oauth2/token
 Content-Type: application/x-www-form-urlencoded
