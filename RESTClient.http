@@ -1,7 +1,7 @@
-@TenantID=<Tenant-ID>
+@TenantID=<Your-Tenant-ID>
 @GrantType=client_credentials
-@ClientID=<Client-ID>
-@ClientSecret=<Client-Secret>
+@ClientID=<Your-Client-ID>
+@ClientSecret=<Your-Client-Secret>
 @Resource=https://management.azure.com
 
 # @name login
@@ -17,7 +17,7 @@ grant_type={{GrantType}}
 
 # @name CreateResourceGroup
 @BearerToken={{login.response.body.access_token}}
-@SubscriptionID=<Subscription-ID>
+@SubscriptionID=<Your-Subscription-ID>
 @ResourceGroupName=TestRG-GdR
 
 PUT https://management.azure.com/subscriptions/{{SubscriptionID}}/resourcegroups/{{ResourceGroupName}}?api-version=2020-06-01
